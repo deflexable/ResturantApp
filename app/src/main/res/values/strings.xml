@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">No1_Resturant_App</string>
+    <string name="brandName">No 1</string>
+    <string name="logIn">Login</string>
+    <string name="registerNow">Register Now</string>
+    <string name="finger">Now! Quick Login Use Touch ID</string>
+    <string name="CreateNewAccount">Create New Account</string>
+    <string name="Oruseyouremailaccount">Or use your email account</string>
+    <string name="Email">Email</string>
+    <string name="Name">Name</string>
+    <string name="Password">Password</string>
+    <string name="SignUp">Sign Up</string>
+    <string name="Logintoyouraccount">Login to your account</string>
+    <string name="Rememberme">Remember me</string>
+    <string name="ForgotPassword">Forgot Password?</string>
+    <string name="SignIn">Sign In</string>
+    <string name="Donthaveanaccount">Don’t have an account? </string>
+    <string name="Registerhere">Register here </string>
+
 </resources>
