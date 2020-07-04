@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
@@ -15,6 +16,7 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
     ImageView logo;
     TextView logoName;
+    Button login, register;
     LinearLayout secondLayout, fingerLayout;
     int SPLASH_TIME = 3000; //This is 3 seconds
     @Override
@@ -26,6 +28,8 @@ public class MainActivity extends AppCompatActivity {
         logoName = (TextView) findViewById(R.id.logoText);
         secondLayout = (LinearLayout) findViewById(R.id.secondLayout);
         fingerLayout = (LinearLayout) findViewById(R.id.finger);
+        login = (Button) findViewById(R.id.loginBTN);
+        register = (Button) findViewById(R.id.registerBTN);
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
@@ -47,6 +51,21 @@ public class MainActivity extends AppCompatActivity {
 
             }
         }, SPLASH_TIME);
+        login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+        register.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,RegisterActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
     }
 
 
