@@ -7,52 +7,59 @@
     android:orientation="vertical"
     android:background="@drawable/back"
     tools:context=".RegisterActivity">
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        android:orientation="vertical">
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:src="@drawable/biglogo"/>
-    </LinearLayout>
 
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="575dp"
-        android:background="@drawable/curve"
-        android:orientation="vertical"
-        >
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="90dp"
             android:orientation="vertical">
-            <TextView
-                android:layout_width="match_parent"
+            <ImageView
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="30sp"
-                android:text="@string/CreateNewAccount"
                 android:layout_gravity="center"
-                android:gravity="center"
-                android:layout_marginTop="24dp"
-                android:fontFamily="@font/segoe_ui"
-                android:textAllCaps="false"
-                android:textStyle="normal"
-                android:textColor="@color/blue"
-                android:letterSpacing="0.1"/>
+                android:src="@drawable/biglogo"/>
+        </LinearLayout>
 
-            <ScrollView
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/curve"
+            android:orientation="vertical"
+
+            >
+
+
+
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/transparent"
-                android:layout_marginTop="24dp"
-
-                >
-                <LinearLayout
+                android:orientation="vertical">
+                <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:textSize="30sp"
+                    android:text="@string/CreateNewAccount"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginTop="24dp"
+                    android:fontFamily="@font/segoe_ui"
+                    android:textAllCaps="false"
+                    android:textStyle="normal"
+                    android:textColor="@color/blue"
+                    android:letterSpacing="0.1"/>
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/scrollback"
+                    >
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="500dp"
                     android:orientation="vertical"
                     android:background="@drawable/second_curve"
 
@@ -67,16 +74,19 @@
                         android:background="@color/transparent"
                         >
                         <ImageButton
+                            android:id="@+id/fbBTN"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginRight="20dp"
                             android:src="@drawable/fb"/>
                         <ImageButton
+                            android:id="@+id/ggBTN"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginRight="20dp"
                             android:src="@drawable/gg"/>
                         <ImageButton
+                            android:id="@+id/ttBTN"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:src="@drawable/tt"/>
@@ -90,76 +100,50 @@
                         android:textColor="@color/blue"
                         android:textSize="17sp"
                         android:fontFamily="@font/segoe_ui"/>
-                    <TextView
-                        android:id="@+id/textEmail"
-                        android:visibility="gone"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="21sp"
-                        android:text="@string/Email"
-                        android:textColor="@color/green"
-                        android:paddingStart="40dp"
-                        android:fontFamily="@font/segoe_ui"
-                        android:layout_marginTop="20dp"/>
+
                     <EditText
+                        android:id="@+id/emailET"
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
                         android:background="@drawable/edit_text_one"
                         android:layout_gravity="center"
                         android:layout_marginRight="20dp"
                         android:layout_marginTop="20dp"
-                        android:text="@string/Email"
+                        android:hint="@string/Email"
                         android:fontFamily="@font/segoe_ui"
                         android:paddingStart="20dp"
                         android:textSize="21sp"
                         android:layout_marginLeft="20dp"/>
-                    <TextView
-                        android:id="@+id/textName"
-                        android:visibility="gone"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="21sp"
-                        android:text="@string/Name"
-                        android:textColor="@color/green"
-                        android:paddingStart="40dp"
-                        android:fontFamily="@font/segoe_ui"
-                        android:layout_marginTop="20dp"/>
+
                     <EditText
+                        android:id="@+id/nameET"
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
                         android:background="@drawable/edit_text_one"
                         android:layout_gravity="center"
                         android:layout_marginRight="20dp"
                         android:layout_marginTop="20dp"
-                        android:text="@string/Name"
+                        android:hint="@string/Name"
                         android:fontFamily="@font/segoe_ui"
                         android:paddingStart="20dp"
                         android:textSize="21sp"
                         android:layout_marginLeft="20dp"/>
-                    <TextView
-                        android:id="@+id/textPassword"
-                        android:visibility="gone"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="21sp"
-                        android:text="@string/Password"
-                        android:textColor="@color/green"
-                        android:paddingStart="40dp"
-                        android:fontFamily="@font/segoe_ui"
-                        android:layout_marginTop="20dp"/>
+
                     <EditText
+                        android:id="@+id/passwordET"
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
                         android:background="@drawable/edit_text_one"
                         android:layout_gravity="center"
                         android:layout_marginRight="20dp"
                         android:layout_marginTop="20dp"
-                        android:text="@string/Password"
+                        android:hint="@string/Password"
                         android:fontFamily="@font/segoe_ui"
                         android:paddingStart="20dp"
                         android:textSize="21sp"
                         android:layout_marginLeft="20dp"/>
                     <Button
+                        android:id="@+id/signupBTN"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="30dp"
@@ -179,11 +163,14 @@
 
 
                 </LinearLayout>
-            </ScrollView>
 
-        </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
 
-    </FrameLayout>
+
+        </FrameLayout>
+
+
 
 
 </LinearLayout>
