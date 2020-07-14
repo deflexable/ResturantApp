@@ -10,83 +10,125 @@
 
     <LinearLayout
         android:id="@+id/logoLayout"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="center"
-        android:orientation="horizontal"
-        android:visibility="visible">
-        <ImageView
-            android:id="@+id/logo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            app:srcCompat="@drawable/logo"/>
-        <TextView
-            android:id="@+id/logoText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/brandName"
-            android:textSize="40sp"
-            android:textColor="@color/white"
-            android:layout_gravity="center"
-            android:paddingStart="25dp"/>
-    </LinearLayout>
-    <LinearLayout
-        android:id="@+id/secondLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
+        android:orientation="vertical"
         android:gravity="center"
-        android:layout_marginTop="50dp"
-        android:orientation="horizontal"
-        android:visibility="gone">
-        <Button
-            android:id="@+id/loginBTN"
-            android:layout_width="wrap_content"
+        android:visibility="visible">
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/login"
-            android:text="@string/logIn"
-            android:textSize="20sp"
-            android:textAllCaps="false"
-            android:textStyle="bold"
-            android:textColor="@color/blue"/>
-        <Button
-            android:id="@+id/registerBTN"
-            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="300dp"
+            android:visibility="visible">
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/logo"/>
+            <TextView
+                android:id="@+id/logoText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/brandName"
+                android:textSize="40sp"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:paddingStart="25dp"/>
+        </LinearLayout>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animationView"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/login"
-            android:text="@string/registerNow"
-            android:textSize="20sp"
-            android:textAllCaps="false"
-            android:textStyle="bold"
-            android:layout_marginLeft="40dp"
-            android:textColor="@color/blue"/>
+            android:layout_gravity="bottom"
+            app:lottie_rawRes="@raw/loadingindicatordotscircleround"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"/>
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/secondLayout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:orientation="vertical"
         android:visibility="gone"
-        android:id="@+id/finger"
         >
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/finger"
-            android:textColor="@color/green"
-            android:textSize="14sp"
-            android:textStyle="normal"
-            android:textAllCaps="false"
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="250dp"
             android:layout_gravity="center"
-            android:layout_marginTop="40dp"/>
-        <Button
-            android:id="@+id/fingerBTN"
-            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="150dp"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/logone"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/biglogo"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/finger"
             android:layout_gravity="center"
-            android:layout_marginTop="20dp"/>
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/loginBTN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login"
+                android:text="@string/logIn"
+                android:textSize="20sp"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textColor="@color/blue"/>
+            <Button
+                android:id="@+id/registerBTN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login"
+                android:text="@string/registerNow"
+                android:textSize="20sp"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:layout_marginLeft="40dp"
+                android:textColor="@color/blue"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/finger"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/finger"
+                android:textColor="@color/green"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                android:textAllCaps="false"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"/>
+            <Button
+                android:id="@+id/fingerBTN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/finger"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"/>
+
+        </LinearLayout>
 
     </LinearLayout>
 
