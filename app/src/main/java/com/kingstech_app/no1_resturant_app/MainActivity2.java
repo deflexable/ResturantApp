@@ -2,6 +2,7 @@ package com.kingstech_app.no1_resturant_app;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
@@ -18,7 +19,7 @@ public class MainActivity2 extends AppCompatActivity {
 
         emailET = (EditText) findViewById(R.id.emailET);
         passwordET = (EditText) findViewById(R.id.passwordET);
-        signInBTN = (Button) findViewById(R.id.signupBTN);
+        signInBTN = (Button) findViewById(R.id.signInBTN);
         fbBTN = (Button) findViewById(R.id.fbBTN);
         ggBTN = (Button) findViewById(R.id.ggBTN);
         ttBTN = (Button) findViewById(R.id.ttBTN);
@@ -38,6 +39,13 @@ public class MainActivity2 extends AppCompatActivity {
                 emailET.setBackgroundResource(R.drawable.edit_text_one);
                 passwordET.setBackgroundResource(R.drawable.edittexttwo);
                 return false;
+            }
+        });
+        signInBTN.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity2.this, MenuActivity.class);
+                startActivity(intent);
             }
         });
     }

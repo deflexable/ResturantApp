@@ -16,5 +16,14 @@
     <string name="SignIn">Sign In</string>
     <string name="Donthaveanaccount">Don’t have an account? </string>
     <string name="Registerhere">Register here </string>
+    <string name="menu">Menu</string>
+    <string name="all">All</string>
+    <string name="Breakfast">Breakfast</string>
+    <string name="Lunch">Lunch</string>
+    <string name="Diner">Diner</string>
+    <string name="POPULAR">POPULAR</string>
+    <string name="foodName">POPULAR</string>
+    <string name="foodCost">$9.99</string>
+
 
 </resources>

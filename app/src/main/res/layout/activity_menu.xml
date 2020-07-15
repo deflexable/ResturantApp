@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    android:orientation="vertical"
+    tools:context=".MenuActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="20dp">
+
+        <Button
+            android:id="@+id/menuBTN"
+            android:layout_width="43dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:background="@drawable/ham"
+            android:gravity="center" />
+
+        <Button
+            android:id="@+id/cartBTN"
+            android:layout_width="35dp"
+            android:layout_height="38dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="285dp"
+            android:background="@drawable/cart"
+            android:gravity="center" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="20dp"
+        android:text="@string/menu"
+        android:textSize="32dp"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/light_gray"
+        android:fontFamily="@font/segoe_ui"
+        android:textAllCaps="true"/>
+    <ScrollView
+        android:layout_width="550dp"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        >
+        <LinearLayout
+            android:layout_width="550dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <Button
+                android:id="@+id/allBTN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:text="@string/all"
+                android:textAllCaps="false"
+                android:textSize="30sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/segoe_ui"/>
+            <Button
+                android:id="@+id/bfBTN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:text="@string/Breakfast"
+                android:textAllCaps="false"
+                android:textSize="30sp"
+                android:layout_marginStart="20dp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/segoe_ui"/>
+            <Button
+                android:id="@+id/lunBTN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:text="@string/Lunch"
+                android:textAllCaps="false"
+                android:layout_marginStart="20dp"
+                android:textSize="30sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/segoe_ui"/>
+            <Button
+                android:id="@+id/dinBTN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:text="@string/Diner"
+                android:textAllCaps="false"
+                android:layout_marginStart="20dp"
+                android:textSize="30sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/segoe_ui"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
